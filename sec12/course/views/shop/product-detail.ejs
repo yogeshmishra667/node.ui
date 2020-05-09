@@ -1,0 +1,27 @@
+<%- include('../includes/head') %>
+<link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <%- include('../includes/navigation') %>
+    <main class="centered">
+        <% if (product) { %>
+        <h1><%= product.title %></h1>
+        <hr />
+        <div>
+            <img src="<%= product.imageUrl  %>" alt="<%= product.title %>" />
+        </div>
+        <h2>$<%= product.price %></h2>
+        <p><%= product.description %></p>
+
+        <div class="card__actions">
+            <div class="card__actions">
+                <a href="/products" class="btn">Back</a>
+                <%- include('../includes/add-to-cart') %>
+            </div>
+        </div>
+        <% } else { %>
+        <h3>Product not found!</h3>
+        <% } %>
+    </main>
+    <%- include('../includes/end') %>

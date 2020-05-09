@@ -1,0 +1,16 @@
+{
+  "name": "sec4",
+  "version": "1.0.0",
+  "description": "Udemy NodeJS Complete Guide Section 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevan Stuart",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

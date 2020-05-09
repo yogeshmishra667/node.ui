@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-sec6-course",
+  "version": "1.0.0",
+  "description": "Node JS Course Section 6",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "Kevan Stuart",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^3.0.2",
+    "express": "^4.16.3",
+    "mongodb": "^3.5.6",
+    "sequelize": "^5.21.6"
+  }
+}

@@ -1,0 +1,23 @@
+<main>
+  <div class="grid">
+    {{#each products}}
+      <article class="card product-item">
+        <header class="card__header">
+          <h1 class="product__title">{{this.title}}</h1>
+        </header>
+        <div class="card__image">
+          <img src="https://kbimages1-a.akamaihd.net/185e7463-9792-4728-8403-d91a6352d549/1200/1200/False/the-da-vinci-code-1.jpg" alt="A Book">
+        </div>
+        <div class="card__content">
+          <h2 class="product__price">$19.99</h2>
+          <p class="product__description">A very interesting book about so many even more interesting things!</p>
+        </div>
+        <div class="card__actions">
+          <button class="btn">Add to Cart</button>
+        </div>
+      </article>
+    {{else}}
+      <h3> No Products</h3>
+    {{/each}}
+  </div>
+</main>

@@ -1,0 +1,36 @@
+body {
+  padding: 2rem;
+}
+
+nav {
+  background: #00bcd4;
+  border-radius: 5px;
+  max-width: 32rem;
+  padding: 1rem;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+nav > ul > li {
+  flex: 1;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+a {
+  text-transform: uppercase;
+  color: #000839;
+}
+
+.lowercase {
+  text-transform: unset;
+  color: #00bcd4;
+}
