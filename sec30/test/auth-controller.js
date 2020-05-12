@@ -11,10 +11,9 @@ const AuthController = require('../controllers/auth')
 describe('Auth Controller Login', () => {
   before(done => {
     mongoose
-      .connect(
-        'mongodb+srv://nodejs-admin:qBOxLeQ6aXqH9R6@kevan0-hi7gv.mongodb.net/nodejs-test',
-        { useNewUrlParser: true, useUnifiedTopology: true }
-      )
+      .connect('', { 
+        useNewUrlParser: true, useUnifiedTopology: true 
+      })
       .then(result => {
         const user = new User({ 
           _id: '5c0f66b979af55031b34728a',
